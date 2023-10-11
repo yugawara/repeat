@@ -105,6 +105,7 @@ Namespace repeat
 
         <STAThread>
         Sub Main()
+
             Console.Write("AAA")
             ' ApplicationConfiguration.Initialize() ' You might need to provide this or remove it if it's not used in VB.
 
@@ -117,7 +118,6 @@ Namespace repeat
 
             Dim mainForm As New Form1()
             AddHandler mainForm.FormClosed, Sub(s, e) RemoveKeyboardHook()  ' Unhook when the form is closed
-
             Application.Run(mainForm)
         End Sub
     End Module
